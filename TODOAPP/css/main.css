@@ -1,0 +1,56 @@
+.verde {
+	margin-top: 50px;
+	background-color: #B56453;
+	color: white;
+	padding-top: 80px;
+}
+
+.verde h1{
+	font-size: 3em;
+}
+
+.ingresaT {
+	background-color: #DF7B6B;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 30px;	
+}
+
+.ingresaT textarea {
+	position: relative;
+	margin-left: 480px;
+	color: white;
+	font-size: 15px;
+	background-color: #EDA298;
+}
+
+button {
+	position: relative;
+	margin-left: 510px;
+}
+
+#lista {
+	background-color: #E9BCBC;
+}
+
+.contenedor {
+	border: 2px solid black;
+	margin: 5px;
+	background-color: #EDA298;
+}
+
+.tachar {
+	text-decoration: line-through;
+	color: red;
+}
+
+.footer {
+	background-color: #EDA298;
+	padding: 70px 0;
+}
+
+.footer span {
+	font-size: 15px;
+	position: relative;
+	left: 300px;
+}
