@@ -1,31 +1,42 @@
 var texto = document.getElementById("inputCuadro").value;
 var lista = document.getElementById("lista");
-var inputCuadro = document.getElementById("inputCuadro");
-
+var listaTareas = document.getElementById("listaTareas");
 
 function agregarTarea() {
     var texto = document.getElementById("inputCuadro").value;
    
     if(texto != ""){
     	var div = document.createElement("div");
+    	div.setAttribute("class", "contenedor");
+    	var checked = document.createElement("input");
+    	checked.setAttribute("type", "checkbox");
+    	checked.setAttribute("class", "checked");
+        var tarea = document.createElement("span");
+        tarea.setAttribute("class", "tarea");
         var btn = document.createElement("button");
-        btn.innerHTML = "eliminar";
+        btn.setAttribute("class", "eliminar glyphicon glyphicon-trash");
         btn.addEventListener('click', eliminarTarea);
-		lista.appendChild(div);
-		div.innerHTML = texto;
+        checked.onclick = function(){
+        	if(this.checked === true){
+        		tarea.setAttribute("class", "tachar");
+        	}else{
+        		tarea.removeAttribute("class");
+        	}
+        }
+        listaTareas.appendChild(div);
+        div.appendChild(checked);
+        tarea.innerHTML = texto;
+        div.appendChild(tarea);
         div.appendChild(btn);
-		document.getElementById("inputCuadro").value = "";
+        document.getElementById("inputCuadro").value = "";
     }else{
-    	alert("Tarea no puede ser ingresada")
+    	alert("Tarea no puede ser ingresada");
     }
 }
 
-function eliminarTarea() {
-    var texto = document.getElementById("inputCuadro").value;
-   
-    if(texto != ""){
-		document.getElementById("inputCuadro");
-    }
+function eliminarTarea(e) {
+ 	var div = e.target.parentNode;
+ 	listaTareas.removeChild(div);   
 }
 
 /*function lista() {
@@ -34,3 +45,6 @@ function eliminarTarea() {
     tarea.campoTarea.appendChild(div);
 }
 */ 
+//lista.appendChild(div);
+		//div.innerHTML = texto;
+        //div.appendChild(btn);
