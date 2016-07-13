@@ -1,8 +1,8 @@
 .verde {
-	margin-top: 50px;
+	margin-top: 4%;
 	background-color: #B56453;
 	color: white;
-	padding-top: 80px;
+	padding-top: 6%;
 }
 
 .verde h1{
@@ -12,13 +12,13 @@
 .ingresaT {
 	background-color: #DF7B6B;
 	color: white;
-	padding-top: 20px;
-	padding-bottom: 30px;	
+	padding-top: 3%;
+	padding-bottom: 2%;	
 }
 
 .ingresaT textarea {
 	position: relative;
-	margin-left: 480px;
+	margin-left: 42%;
 	color: white;
 	font-size: 15px;
 	background-color: #EDA298;
@@ -26,29 +26,29 @@
 
 .btn-danger {
 	position: relative;
-	margin-left: 510px;
+	margin-left: 45%;
 }
 
 .contenedor {
 	border: 1px solid black;
-	margin: 10px;
-	padding: 15px;
+	margin: 0.5%;
+	padding: 1%;
 	background-color: #B56453;
 }
  .contenedor span {
  	position: relative;
- 	left: 20px;
+ 	left: 2%;
  }
 
 .glyphicon-trash {
 	color: black;
 	position: relative;
-	left: 40px;
+	left: 4%;
 }
 
 .tarea {
 	position: relative;
-	left: 20px;
+	left: 5%;
 }
 
 
@@ -56,16 +56,16 @@
 	text-decoration: line-through;
 	color: red;
 	position: relative;
-	left: 20px;
+	left: 4%;
 }
 
 .footer {
 	background-color: #EDA298;
-	padding: 70px 0;
+	padding: 5% 0;
 }
 
 .footer span {
 	font-size: 15px;
 	position: relative;
-	left: 300px;
+	left: 25%;
 }
